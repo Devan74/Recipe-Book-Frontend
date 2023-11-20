@@ -1,4 +1,4 @@
-const apiUrl = 'http://localhost:8000/api/recipes';
+const apiUrl = 'https://recipe-books-apps.onrender.com/api/recipes';
 const actualToken = localStorage.getItem('token');
 
 const api = {
@@ -30,7 +30,7 @@ const api = {
 };
 
 export const getUserById = async (userId) => {
-  const response = await fetch(`http://localhost:8000/api/users/${userId}`);
+  const response = await fetch(`https://recipe-books-apps.onrender.com/api/users/${userId}`);
   const data = await response.json();
   return data;
 };
