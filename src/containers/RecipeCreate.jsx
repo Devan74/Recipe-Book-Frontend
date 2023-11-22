@@ -21,7 +21,7 @@ function RecipeCreate() {
     const newRecipe = await api.createRecipe(recipeData);
 
     // Redirect to the new recipe's details page
-    //navigate(`/recipe/${newRecipe._id}`);
+    navigate("/home");
   };
 
   return (
